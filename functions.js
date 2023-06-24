@@ -7,17 +7,17 @@ function saludar() {
 console.log(saludar());
 // - Una función asíncrona que utilice un setTimeout y pase por consola un "Hola soy una promesa" 5 segundos después de haberse ejecutado
 
-async function mensajeAsicorna (){
-    await new Promise ((resolve, reject) => {
-        if(true){
-           setTimeout(resolve, 5000);
-           
-            console.log("Hola soy una promesa");
-        }else{
-            reject()
-            console.log("error");
-        }
-    })
+async function mensajeAsicorna() {
+  await new Promise((resolve, reject) => {
+    if (true) {
+      setTimeout(resolve, 5000);
+
+      console.log("Hola soy una promesa");
+    } else {
+      reject();
+      console.log("error");
+    }
+  });
 }
 
 mensajeAsicorna();
@@ -28,12 +28,10 @@ function* genIndice() {
   while (true) {
     yield id;
     id += 2;
-     
   }
 }
 const genIdx = genIndice();
 
-for (let i = 0 ; i < 10; i++){
-    console.log(genIdx.next().value);
+for (let i = 0; i < 10; i++) {
+  console.log(genIdx.next().value);
 }
-
