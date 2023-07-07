@@ -1,0 +1,40 @@
+.seccion {
+    background-color: darkslategray;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.parrafos{
+    background-color: green;
+    padding: 1rem;
+}
+
+.parrafos.dragging{
+    opacity: 0.3;
+}
+
+.imagen-fantasma{
+    width: 100px;
+    height: 100px ;
+    position: absolute;
+    left: -100vw;
+}
+
+
+.contenedor-imagen {
+   display: flex;
+   justify-content: center;
+  align-items: center;
+
+}
+
+.papelera {
+    text-align: center;
+    padding: 2rem;
+    opacity: 0.3;
+    
+} 
+
+ .papelera-hover {
+    opacity: 1;
+} 
