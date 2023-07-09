@@ -1,0 +1,10 @@
+.nombre{
+    text-align: center;
+    padding: 2rem;
+    
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+ }
